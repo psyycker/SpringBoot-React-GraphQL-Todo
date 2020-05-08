@@ -8,13 +8,13 @@ Using reactJS as frontend
 The project is using java 14 and nodeJS 12.16.x. Make sure it's installed on your machine.
 <br/>
 *Make sure to run the backend before the frontend*
-###Backend
+### Backend
 To run the backend, open a terminal and move into the project folder. Then, simply run 
 ```shell script
 ./gradlew bootRun
 ```
 The server will run on the port 8080. Make sure it's available.
-###Frontend
+### Frontend
 Open a new terminal and move into the `todo-ui` folder
 <br/>
 Install packages by running
@@ -27,7 +27,7 @@ Once installed, run the frontend with the command
 ```
 The frontend will open itself on the port 3000 and directly communicate with the backend.
 
-##TODO
+## TODO
 (Most of the work on the backend is already done)
 - Finish displaying information in each list item
 - UI to create a new todo item
@@ -37,5 +37,5 @@ The frontend will open itself on the port 3000 and directly communicate with the
 - Edit an item (API to do)
 - Assign a category to an item
 
-##License
+## License
 MIT
