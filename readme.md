@@ -1,4 +1,4 @@
-#TodoList -> Spring boot - ReactJS - GraphQL 
+# TodoList using Spring boot - ReactJS - GraphQL 
 
 An experimental project to learn how to use graphql with spring boot. <br/>
 Using reactJS as frontend
