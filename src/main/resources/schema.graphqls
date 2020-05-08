@@ -1,0 +1,39 @@
+type Query {
+    "Get the list of todos"
+    todos: [Todo]
+    "Get a specific todo"
+    todoById(id: ID!): Todo
+    "Get all the todo using a category (Using category Id as parameter)"
+    todosForCategoryId(id: ID!): [Todo]
+    "Get all the todo using a category (Using category name as parameter)"
+    todosForCategoryName(name: String!): [Todo]
+}
+
+"List of all the mutations"
+type Mutation {
+    "Add a new todo to the database"
+    addTodo(name: String!, description: String, category: ID): Todo
+    "Assign a category to a specific todo"
+    setCategoryForTodo(todoId: ID!, categoryId: ID!): Todo
+    removeTodo(todoId: ID!): EmptyReturnResponse
+    changeCompletionState(todoId: ID!, completion: Boolean!): Todo
+}
+
+type EmptyReturnResponse {
+    success: Boolean!
+}
+
+"Categories used by the todos"
+type TodoCategory {
+    id: ID!
+    name: String!
+}
+
+"A todo"
+type Todo {
+    id: ID!
+    name: String!
+    description: String
+    done: Boolean!
+    category: TodoCategory
+}
